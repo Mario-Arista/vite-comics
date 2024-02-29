@@ -39,6 +39,7 @@ export default {
 #bottom-footer {
 
   width: 100%;
+  z-index: 3;
 
   background-color: #303030;
 

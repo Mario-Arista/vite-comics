@@ -89,11 +89,9 @@ export default {
           align-items: center;
           gap: 10px;
 
-          height: 60px;
-
             img {
               width: auto;
-              height: 100%;
+              height: 60px;
             }
 
             img:last-of-type {
