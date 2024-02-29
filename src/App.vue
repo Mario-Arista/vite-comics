@@ -2,7 +2,9 @@
 import AppNav from './components/AppNav.vue';
 import AppMain from './components/AppMain.vue';
 import AppFeatures from './components/AppFeatures.vue';
-import AppFooter from './components/AppFooter.vue';
+import AppTopF from './components/AppTopF.vue';
+import AppBottomF from './components/AppBottomF.vue';
+
 
 export default {
 
@@ -10,7 +12,8 @@ export default {
     AppNav,
     AppMain,
     AppFeatures,
-    AppFooter,
+    AppTopF,
+    AppBottomF,
   }
 
 }
@@ -23,7 +26,10 @@ export default {
 
     <AppFeatures></AppFeatures>
 
-    <AppFooter></AppFooter>
+    <footer>
+      <AppTopF></AppTopF>
+      <AppBottomF></AppBottomF>
+    </footer>
 
 </template>
 
