@@ -14,10 +14,7 @@ export default {
 </template>
 
 <style lang="scss">
+@use '../styles/general.scss' as *;
 
-div {
-    background-color: red;
-    color: white;
-}
 
 </style>

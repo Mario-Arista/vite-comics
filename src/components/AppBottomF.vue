@@ -15,8 +15,7 @@ export default {
 
 <style lang="scss">
 
-div {
-    color: green;
-}
+@use '../styles/general.scss' as *;
+
 
 </style>
