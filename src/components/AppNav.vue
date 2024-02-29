@@ -30,7 +30,7 @@ export default {
   
     <nav>
 
-        <img src="/img/dc-logo.png" alt="logo DC">
+        <img src="../assets/img/dc-logo.png" alt="logo DC">
         <ul>
             <li 
                 v-for="(Currentlink, index) in links"
