@@ -39,7 +39,6 @@ export default {
 #bottom-footer {
 
   width: 100%;
-  z-index: 3;
 
   background-color: #303030;
 
@@ -70,6 +69,7 @@ export default {
       display: flex;
       justify-content: flex-end;
       align-items: center;
+      flex-wrap: wrap;
       gap: 25px;
 
         span {

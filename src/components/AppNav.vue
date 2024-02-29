@@ -69,13 +69,12 @@ nav {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+        flex-wrap: wrap;
         gap: 30px;
         flex-grow: 1;
 
         list-style-type: none;
-        
-        margin: 0px;
-        padding: 0px;
+    
 
         color: $sec_color;
 
@@ -85,7 +84,7 @@ nav {
             padding-top: 45px;
             padding-bottom: 45px;
             text-transform: uppercase;
-            font-size: 0.6em;
+            font-size: 0.7em;
             font-weight: 400;
         }
 

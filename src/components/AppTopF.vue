@@ -134,6 +134,7 @@ export default {
       padding-bottom: 40px;
       padding-top: 40px;
 
+      overflow: hidden;
 
       #link-row {
         display: flex;
