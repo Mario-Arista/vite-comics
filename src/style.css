@@ -1,6 +1,17 @@
 :root {
-    font-family: sans-serif;
+
+  font-family: sans-serif;
   
-    background-color: #FFFFFF;
+  background-color: #FFFFFF;
   
-  }
+}
+
+/* Reset rules */
+
+* {
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}

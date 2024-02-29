@@ -16,6 +16,8 @@ export default {
 
 <style lang="scss">
 
+@use '../styles/general.scss' as *;
+
 #AppFeatures {
     background-color: green;
     color: white;
