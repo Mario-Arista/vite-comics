@@ -39,23 +39,26 @@ export default {
 
 .comic {
     position: relative;
-
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start; 
 
     width: calc(100% / 6 - 20px / 6 * 5);
+    height: 100%;
 
     h4 {
         color: white;
         text-transform: uppercase;
-        font-size: 0.9em;
+        font-size: 0.8em;
+        margin-top: 15px;
+        margin-bottom: 0px;
 
-        padding-top: 10px;
+        min-height: 1.6em;
+
     }
     
     img {
-        display: block;
         width: 180px;
         height: 180px;
         object-fit: cover;
@@ -64,13 +67,15 @@ export default {
 
     .price {
         position: absolute;
-        left: -5px;
+        right: -5px;
         top: -5px;
 
-        padding: 2px 4px;
+        padding: 2px 8px;
 
-        font-size: 0.8em;
+        font-size: 0.9em;
         font-weight: bold;
+
+        border-radius: 8px;
 
         color: white;
         background-color: $primary_color;

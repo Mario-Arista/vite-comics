@@ -111,6 +111,7 @@ export default {
 
                 </ComicItem>
 
+                <button>LOAD MORE</button>
                 
             </div>
         </div>
@@ -144,7 +145,7 @@ main {
             flex-wrap: wrap;
             gap: 40px 20px;
 
-            padding: 40px 0px;
+            padding: 50px 0px;
 
             h2 {
                 position: absolute;
@@ -159,6 +160,20 @@ main {
                 background-color: $primary_color;
                 color: white;
 
+            }
+
+            button {
+                margin: 0 auto;
+
+                padding: 12px;
+
+                border: $primary_color 1px solid;
+
+                font-size: 1em;
+                font-weight: bold;
+
+                background-color: $primary_color;
+                color: white;
             }
 
         }
