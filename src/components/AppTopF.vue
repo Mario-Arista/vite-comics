@@ -102,7 +102,7 @@ export default {
 
       <!-- Immagine del logo -->
       <div id="img-row">
-        <img src="../assets/img/dc-logo-bg.png" alt="DC logo">
+        <img src="/img/dc-logo-bg.png" alt="DC logo">
       </div>
 
     </div>
@@ -112,25 +112,21 @@ export default {
 
 <style lang="scss">
 
-@use '../styles/general.scss' as *;
+@use '../styles/variables.scss' as *;
 
 #top-footer {
 
   width: 100%;
 
-  background-color: $sec_color;
-  background-image: url('../assets/img/footer-bg.jpg');
-  background-position: cover;
+  background-image: url('/img/footer-bg.jpg');
+  background-size: cover;
    
     .container {
-      display: flex;
+
       justify-content: space-between;
-      align-items: center;
 
       position: relative;
 
-      max-width: 1200px;
-      margin: 0 auto;
       padding-bottom: 40px;
       padding-top: 40px;
 

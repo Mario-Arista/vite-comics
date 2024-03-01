@@ -17,11 +17,11 @@ export default {
 
       <div class="social-isons">
         <span>FOLLOW US</span>
-        <img src="../assets/img/footer-facebook.png" alt="Facebook icon">
-        <img src="../assets/img/footer-twitter.png" alt="Twitter icon">
-        <img src="../assets/img/footer-youtube.png" alt="YouTube icon">
-        <img src="../assets/img/footer-pinterest.png" alt="Footer icon">
-        <img src="../assets/img/footer-periscope.png" alt="Periscope icon">
+        <img src="/img/footer-facebook.png" alt="Facebook icon">
+        <img src="/img/footer-twitter.png" alt="Twitter icon">
+        <img src="/img/footer-youtube.png" alt="YouTube icon">
+        <img src="/img/footer-pinterest.png" alt="Footer icon">
+        <img src="/img/footer-periscope.png" alt="Periscope icon">
 
 
       </div>
@@ -34,7 +34,7 @@ export default {
 
 <style lang="scss">
 
-@use '../styles/general.scss' as *;
+@use '../styles/variables.scss' as *;
 
 #bottom-footer {
 
@@ -46,12 +46,8 @@ export default {
   padding-bottom: 25px;
    
   .container {
-    display: flex;
+    
     justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-
-    margin: 0 auto;
 
     button {
       background-color: transparent;

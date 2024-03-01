@@ -20,7 +20,7 @@ export default {
 
 <style lang="scss">
 
-@use '../styles/general.scss' as *;
+@use '../styles/variables.scss' as *;
 
 main {
 
@@ -29,9 +29,6 @@ main {
     background-color: $sec_color;
    
     .container {
-        max-width: 1200px;
-
-        margin: 0 auto;
 
         padding-top: 50px;
         padding-bottom: 50px;

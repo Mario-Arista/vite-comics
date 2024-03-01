@@ -1,9 +1,4 @@
 <script>
-import digitalComicsImage from "../assets/img/buy-comics-digital-comics.png";
-import merchImage from "../assets/img/buy-comics-merchandise.png";
-import subscriptionImage from "../assets/img/buy-comics-subscriptions.png";
-import shopLocatorImage from "../assets/img/buy-comics-shop-locator.png";
-import powerVisaImage from "../assets/img/buy-dc-power-visa.svg";
 
 export default {
 
@@ -13,23 +8,23 @@ export default {
     return {
       features: [
         {
-          image: digitalComicsImage,
+          image: "/img/buy-comics-digital-comics.png",
           text: "DIGITAL COMICS",
         },
         {
-          image: merchImage,
+          image: "/img/buy-comics-merchandise.png",
           text: "DC MERCHANDISING",
         },
         {
-          image: subscriptionImage,
+          image: "/img/buy-comics-subscriptions.png",
           text: "SUBSCRIPTION",
         },
         {
-          image: shopLocatorImage,
+          image: "/img/buy-comics-shop-locator.png",
           text: "COMIC SHOP LOCATOR",
         },
         {
-          image: powerVisaImage,
+          image: "/img/buy-dc-power-visa.svg",
           text: "DC POWER VISA",
         },
       ]
@@ -50,8 +45,11 @@ export default {
         class="single-feature"
         v-for="currenFeature in features"
       >
-        <img :src="currenFeature.image" :alt="currenFeature.text">
-        <span>{{ currenFeature.text }}</span>
+        <div class="img-container">
+          <img :src="currenFeature.image" :alt="currenFeature.text">
+        </div>
+        
+        <h3>{{ currenFeature.text }}</h3>
       </div>
     </div>
     
@@ -62,7 +60,7 @@ export default {
 
 <style lang="scss">
 
-@use '../styles/general.scss' as *;
+@use '../styles/variables.scss' as *;
 
 #AppFeatures {
     background-color: $primary_color;
@@ -70,38 +68,37 @@ export default {
     width: 100%;
 
     .container {
-      display: flex;
+      
       justify-content: center;
-      align-items: center;
       gap: 65px;
-
-      max-width: 1200px;
-
-      margin: 0 auto;
 
       padding-top: 45px;
       padding-bottom: 45px;
 
-      color: white;
       
         .single-feature {
           display: flex;
           align-items: center;
           gap: 10px;
 
+          .img-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            height: 50px;
+
             img {
-              width: auto;
-              height: 60px;
+              height: 100%;
+              max-width: 50px;
+              
             }
 
-            img:last-of-type {
-              width: 45px;
-              height: auto;
-            }
+          }
 
-            span {
-              font-size: 0.8em;
-            }
+          h3 {
+            font-size: 0.8em;
+          }
 
         }
     }
