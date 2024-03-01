@@ -178,4 +178,17 @@ export default {
     }
 }
 
+@media screen and (max-width: 576px) {
+  
+  #top-footer .container #img-row {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 200px;
+
+  }
+
+
+}
+
 </style>

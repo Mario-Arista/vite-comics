@@ -70,8 +70,8 @@ export default {
     .container {
       
       justify-content: center;
+      flex-wrap: wrap;
       gap: 65px;
-
       padding-top: 45px;
       padding-bottom: 45px;
 

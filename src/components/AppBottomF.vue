@@ -15,7 +15,7 @@ export default {
 
       <button>SIGN-UP NOW!</button>
 
-      <div class="social-isons">
+      <div class="social-icons">
         <span>FOLLOW US</span>
         <img src="/img/footer-facebook.png" alt="Facebook icon">
         <img src="/img/footer-twitter.png" alt="Twitter icon">
@@ -61,7 +61,7 @@ export default {
       font-weight: bold;
     }
 
-    .social-isons {
+    .social-icons {
       display: flex;
       justify-content: flex-end;
       align-items: center;
@@ -78,4 +78,22 @@ export default {
   }
 
 }
+
+@media screen and (max-width: 576px) {
+
+  #bottom-footer .container .social-icons {
+    gap: 10px;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+
+    span {
+      font-size: 0.7em;
+    }
+  }
+
+}
+
 </style>

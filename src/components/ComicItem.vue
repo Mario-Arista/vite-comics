@@ -89,4 +89,32 @@ export default {
 
 }
 
+@media screen and (max-width: 1200px) {
+    .comic {
+        width: calc(100% / 4 - 20px / 6 * 5);
+
+        img{
+            width: 22vw;
+            height: 22vw;
+        }
+        .price {
+            right: -5px;
+            top: -5px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .comic {
+        margin: 0 auto;
+        width: 80vw;
+
+        img{
+            width: 100%;
+            height: 80vw;
+        }
+    }
+}
+
+
 </style>

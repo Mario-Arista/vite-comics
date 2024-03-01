@@ -93,4 +93,27 @@ nav {
 
 }
 
+@media screen and (max-width: 992px) {
+    nav .container {
+        padding: 10px 5px;
+        ul {
+            gap: 10px;
+
+            li {
+            
+                padding-top: 10px;
+                padding-bottom: 10px;
+    
+            }
+
+        }
+    }    
+}
+
+@media screen and (max-width: 576px) {
+    nav .container ul {
+        display: none;
+    }
+}
+
 </style>
